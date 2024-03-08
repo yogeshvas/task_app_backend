@@ -18,8 +18,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
 //using routes
-app.use("/users", userRouter);
-app.use("/tasks", taskRouter);
+app.use("/api/users", userRouter);
+app.use("/api/tasks", taskRouter);
 
 //using error middleware
 app.use(errorMiddleware);
