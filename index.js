@@ -18,11 +18,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
-    methods: ["GET", "PUT", "POST", "DELETE"],
-    credentials: true,
-    sameSite: process.env.NODE_ENV === "Development" ? "lax" : "none",
-    secure: process.env.NODE_ENV === "Development" ? false : true,
+  
   })
 );
 //using routes
