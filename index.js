@@ -16,11 +16,7 @@ config({
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-  
-  })
-);
+app.use(cors());
 //using routes
 app.use("/users", userRouter);
 app.use("/tasks", taskRouter);
