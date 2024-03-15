@@ -21,6 +21,8 @@ app.use(
     origin: [process.env.FRONTEND_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
+    sameSite: "none",
+    secure: false,
   })
 );
 //using routes
